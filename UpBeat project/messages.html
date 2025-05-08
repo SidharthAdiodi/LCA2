@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages | UpBeat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">UpBeat</div>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="discover.html"><i class="fas fa-search"></i> Discover</a>
+            <a href="messages.html" class="active"><i class="fas fa-envelope"></i> Messages</a>
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="messages">
+        <div class="conversation-list">
+            <div class="search-conversations">
+                <input type="text" placeholder="Search messages...">
+            </div>
+            <div class="conversation active">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="User">
+                <div class="conversation-info">
+                    <h4>Maria Garcia</h4>
+                    <p class="last-message">Hey! I loved your latest project...</p>
+                    <p class="time">2h ago</p>
+                </div>
+            </div>
+            <div class="conversation">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="User">
+                <div class="conversation-info">
+                    <h4>Alex Johnson</h4>
+                    <p class="last-message">Let's discuss the collaboration</p>
+                    <p class="time">1d ago</p>
+                </div>
+            </div>
+            <div class="conversation">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="User">
+                <div class="conversation-info">
+                    <h4>Sam Wilson</h4>
+                    <p class="last-message">Thanks for the feedback!</p>
+                    <p class="time">3d ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-area">
+            <div class="chat-header">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="User">
+                <div class="chat-user-info">
+                    <h4>Maria Garcia</h4>
+                    <p>Online</p>
+                </div>
+            </div>
+            <div class="chat-messages">
+                <div class="message received">
+                    <p>Hey! I loved your latest project. The color palette is amazing!</p>
+                    <span class="time">10:30 AM</span>
+                </div>
+                <div class="message sent">
+                    <p>Thanks Maria! I was experimenting with some new techniques.</p>
+                    <span class="time">10:32 AM</span>
+                </div>
+                <div class="message received">
+                    <p>Would you be interested in collaborating on a project? I think our styles would complement each other well.</p>
+                    <span class="time">10:35 AM</span>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 UpBeat. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

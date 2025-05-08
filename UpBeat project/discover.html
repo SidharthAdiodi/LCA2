@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | UpBeat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">UpBeat</div>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="discover.html" class="active"><i class="fas fa-search"></i> Discover</a>
+            <a href="messages.html"><i class="fas fa-envelope"></i> Messages</a>
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="discover">
+        <div class="search-bar">
+            <input type="text" placeholder="Search artists, skills, locations...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="filters">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="photography">Photography</option>
+                <option value="illustration">Illustration</option>
+                <option value="ui-ux">UI/UX</option>
+            </select>
+            <button id="reset-filters" class="filter-btn">Reset</button>
+        </div>
+
+        <!-- Added artist-grid container -->
+        <div class="artist-grid">
+            <div class="artist-card" data-category="ui-ux">
+                <div class="artist-card-img-container">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Artist">
+                </div>
+                <div class="artist-card-content">
+                    <h4>Emma Stone</h4>
+                    <p>UI/UX Designer</p>
+                    <div class="skills">
+                        <span>Figma</span>
+                        <span>Adobe XD</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+            </div>
+            
+            <div class="artist-card" data-category="photography">
+                <div class="artist-card-img-container">
+                    <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce" alt="Artist">
+                </div>
+                <div class="artist-card-content">
+                    <h4>Leslie Kim</h4>
+                    <p>Photographer</p>
+                    <div class="skills">
+                        <span>Portrait</span>
+                        <span>Landscape</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+            </div>
+            
+            <div class="artist-card" data-category="illustration">
+                <div class="artist-card-img-container">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7" alt="Artist">
+                </div>
+                <div class="artist-card-content">
+                    <h4>James Rodriguez</h4>
+                    <p>Illustrator</p>
+                    <div class="skills">
+                        <span>Digital Art</span>
+                        <span>Character Design</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+            </div>
+            
+            <div class="artist-card" data-category="graphic-design">
+                <div class="artist-card-img-container">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2" alt="Artist">
+                </div>
+                <div class="artist-card-content">
+                    <h4>Sarah Miller</h4>
+                    <p>Graphic Designer</p>
+                    <div class="skills">
+                        <span>Branding</span>
+                        <span>Typography</span>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+            </div>
+        </div> <!-- Close artist-grid -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 UpBeat. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>+
